@@ -1,0 +1,66 @@
+AKINS_FOMOCo  IS SALES  Data -- This is sales data from year before to help see how their inventory has changed.. [ FIELDS -- Part#, Part Desc, Cost, Sold PCs,  Sold% ]
+
+          QUE::  Where is Sales Frequency ?
+
+GPARTS Part Measures -- Ford OEM Sizing Data  [ Parts sizing from Chrysler, Toyota will come later ]  [FIELDS -- Svc Part Num, Svc Prt Num Desc, Motorcraft Part (?) , Is Active, Obs Effect
+     Date,  Unit of Issue,  Prod-Attr- Weight, Sizes (Length, Width, Height)
+  
+
+Wholesale and Service JAN_OCT Parts Ranking excel doc --  These two docs almost same content.
+
+     This is Sales Data.....Counter Sales is Wholesale.....Service orders goes to their shop...this is important because the parts that go out to the service have two people tied up (parts puller and Technician) so we will have to weigh that vs what goes out wholesale.
+
+ [ FIELDS - Vendor, Source, Part Number, Desc, Avg.Cost, Price, Sold, Gross Proft]
+  ----  REMOVE multiple Headers with Page Numbers..  
+
+
+Counter Pads 2 Docs --  This is the on hand inventory that he ran...he was doing me a favor so i didnt complain when he included Chrysler Parts, hopefully we can upload that dimensional data as well soon so that would be good to have, but for initial purposes just use the Ford Parts.
+[  Counter Pads are Screen Shots, Can't read by Python ]
+
+
+Im going to answer in the order you asked...
+Sold % is not important....it was just a calculation i ran to show top 20% excluding oil...most dealerships sell fluids thru pump systems that will not be evaluated, so for this purpose, any liquid can be ignored. 
+In Counter pad (That is inventory, OH- On hand (meaning its on the shelf), OH$ means dollar amount of inventory, and On Order means that the part has been ordered from MFG. and is in process) 
+Gross profit is also an item that the report ran but has no bearing on our program...just ignore. 
+For the ones that have no dimensions, lets first find out if they are in the higher percentages, we may find the reasoning behind why they dont have one later....meaning lets put them in the calculations and flag them for missing data. 
+
+Results first are analytics of the data....
+1. Apply Zoning : • Analyze sales frequency data and assign parts to zones (
+    Red Hot, Orange, Yellow, Green, Blue). 
+    2. Assign Storage : • Match parts in each zone to the appropriate storage type 
+    using the rules above. 
+Just by those two factors we will be able to optimize the layout...
+
+
+
+ 
+IMPORTANT::   START WITH FORD PARTS
+
+
+Here are my questions:
+1. I have loaded some of the datafiles as dataframes using python. I could load files, AKINS FoMoCo_Piece_Sales_112222_YTD.xlsx, 
+GPARTS Part Measures.xlsx. Now working on Counter_Pad_11142024.xlsx, but the rows and columns are not proper. Many rows and columns are in one cell.
+Need to segregate them. Can I get proper datafile for Counter_Pad_11142024.xlsx?
+
+2. I was going through the datafiles. To start working on 'Apply Zoning", 
+  where do I find Sales Frequency to work on 'Apply Zoning"?
+
+3. I am asked to ignore liquids. I don't see any liquid-type category for parts. How do I 
+ categorize into liquid or non-liquid parts?
+
+4. The file "Wholesale JAN_Oct_Parts_Ranking_Counter_Invoices_All_Brands" has lots of page-related
+  headers. While loading I need to take care of those recurring  headers. If there is proper datafile, 
+   please share with me.
+
+
+
+
+
+22-NOV QUES::
+
+1) The 4 Processed Files only have 52 Common Part Numbers. 
+So for part number which is in the AKINS FoMoCo_Piece_Sales_112222_YTD.xlsx File, 
+and not in the GPARTS Part Measures.xlsx, where do we get their Dimensions??
+
+
+
