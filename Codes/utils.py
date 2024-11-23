@@ -30,7 +30,7 @@ def read_excel(file_path: str, sheet_name:int=0) -> pd.DataFrame:
     return df
 
 
-def print_df(df: pd.DataFrame, rows: int=100, style: str="fancy_grid") -> None:
+def print_df(df: pd.DataFrame, rows: int=None, style: str="fancy_grid") -> None:
     """
     Prints a formatted representation of a DataFrame.
     
@@ -49,9 +49,9 @@ def _read_excel(file_path, sheet_name):
     try:
         df = pd.read_excel(file_path, sheet_name)
         return df
-    except FileNotFoundError:
-        print(file_path.split('/')[0] + ": File not found")
-        return None
+    # except FileNotFoundError:
+    #     print(file_path.split('/')[0] + ": File not found")
+    #     return None
     except pd.errors.EmptyDataError:
         print(file_path.split('/')[0] + ": The file is empty")
         return None
