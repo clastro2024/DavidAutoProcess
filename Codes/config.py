@@ -6,7 +6,7 @@
 
 
 ## Files Path ##
-AKINS_FOMO_FILE_PATH = r"C:\Sukhendu\UPWORK-WORK\0_Dondray_Auto\StorageRackOptimization\Data&Files\AKINS FoMoCo_Piece_Sales_112222_YTD.xlsx"
+AKINS_FOMO_FILE_PATH = r"\StorageRackOptimization\Data&Files\AKINS FoMoCo_Piece_Sales_112222_YTD.xlsx"
 GPARTS_FILE_PATH = r"C:\Sukhendu\UPWORK-WORK\0_Dondray_Auto\StorageRackOptimization\Data&Files\GPARTS Part Measures.xlsx"
 WHOLESALE_FILE_PATH = r"C:\Sukhendu\UPWORK-WORK\0_Dondray_Auto\StorageRackOptimization\Data&Files\Wholesale JAN_Oct_Parts_Ranking_Counter_Invoices_All_Brands.xlsx"
 SERVICE_FILE_PATH = r"C:\Sukhendu\UPWORK-WORK\0_Dondray_Auto\StorageRackOptimization\Data&Files\Service JAN_Oct_Parts_Ranking_ROs_All_Brands.xlsx"
